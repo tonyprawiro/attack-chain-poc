@@ -1,0 +1,22 @@
+{
+    "webapp_scan_result": [
+        {
+            "host": "host12",
+            "vulnerabilities": [
+                {
+                    "id": "CWE-78"
+                }
+            ]
+        }
+    ],
+    "vulnerability_scan_result": [
+        {
+            "host": "host4",
+            "vulnerabilities": [
+                {
+                    "id": "CVE-2024-6387"
+                }
+            ]
+        }
+    ]
+}

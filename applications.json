@@ -1,0 +1,151 @@
+{
+  "applications": [
+    {
+      "id": "app1",
+      "name": "RiskMaven",
+      "description": "An internal analytics platform designed to evaluate and mitigate financial risks, offering tools for fraud detection, credit scoring, and portfolio risk assessment.",
+      "internet_facing": "no",
+      "criticality_rating": "medium",
+      "hosts": [
+        {
+          "id": "host1",
+          "ip": "192.168.1.1",
+          "os": "linux",
+          "software": [
+            { "name": "Apache", "version": "2.4.54" },
+            { "name": "MySQL", "version": "8.0.34" },
+            { "name": "CUPS", "version": "2.4.4" }
+          ]
+        },
+        {
+          "id": "host2",
+          "ip": "192.168.1.2",
+          "os": "windows",
+          "software": [
+            { "name": "IIS", "version": "10.0" },
+            { "name": "MS SQL Server", "version": "2019" },
+            { "name": "PowerShell", "version": "7.3" }
+          ]
+        },
+        {
+          "id": "host3",
+          "ip": "192.168.1.3",
+          "os": "linux",
+          "software": [
+            { "name": "NGINX", "version": "1.23.3" },
+            { "name": "PostgreSQL", "version": "15.2" },
+            { "name": "Python", "version": "3.11.2" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "app2",
+      "name": "SwiftPayHub",
+      "description": "A digital platform enabling users to send and receive money instantly, manage online payments, and access cross-border payment solutions",
+      "internet_facing": "yes",
+      "criticality_rating": "high",
+      "hosts": [
+        {
+          "id": "host4",
+          "ip": "192.168.2.1",
+          "os": "linux",
+          "software": [
+            { "name": "Tomcat", "version": "10.1.1" },
+            { "name": "MongoDB", "version": "6.0" },
+            { "name": "Java", "version": "17" }
+          ]
+        },
+        {
+          "id": "host5",
+          "ip": "192.168.2.2",
+          "os": "linux",
+          "software": [
+            { "name": "Apache", "version": "2.4.54" },
+            { "name": "Redis", "version": "7.2.0" },
+            { "name": "Node.js", "version": "20.1.0" }
+          ]
+        },
+        {
+          "id": "host6",
+          "ip": "192.168.2.3",
+          "os": "linux",
+          "software": [
+            { "name": "NGINX", "version": "1.23.3" },
+            { "name": "ElasticSearch", "version": "8.10" },
+            { "name": "Kibana", "version": "8.10" }
+          ]
+        },
+        {
+          "id": "host7",
+          "ip": "192.168.2.4",
+          "os": "linux",
+          "software": [
+            { "name": "HAProxy", "version": "2.8.0" },
+            { "name": "PostgreSQL", "version": "15.2" },
+            { "name": "Python", "version": "3.11.2" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "app3",
+      "name": "FinCore360",
+      "description": "A backend system for financial institutions to manage core banking operations, including loan processing, account management, and compliance tracking",
+      "internet_facing": "no",
+      "criticality_rating": "high",
+      "hosts": [
+        {
+          "id": "host8",
+          "ip": "192.168.3.1",
+          "os": "linux",
+          "software": [
+            { "name": "NGINX", "version": "1.23.3" },
+            { "name": "MariaDB", "version": "10.6.7" },
+            { "name": "PHP", "version": "8.2.1" }
+          ]
+        },
+        {
+          "id": "host9",
+          "ip": "192.168.3.2",
+          "os": "linux",
+          "software": [
+            { "name": "Apache", "version": "2.4.54" },
+            { "name": "MySQL", "version": "8.0.34" },
+            { "name": "OpenSSH", "version": "9.8p1" }
+          ]
+        },
+        {
+          "id": "host10",
+          "ip": "192.168.3.3",
+          "os": "linux",
+          "software": [
+            { "name": "Tomcat", "version": "10.1.1" },
+            { "name": "MongoDB", "version": "6.0" },
+            { "name": "Java", "version": "17" }
+          ]
+        },
+        {
+          "id": "host11",
+          "ip": "192.168.3.4",
+          "os": "linux",
+          "software": [
+            { "name": "ElasticSearch", "version": "8.10" },
+            { "name": "Kibana", "version": "8.10" },
+            { "name": "Redis", "version": "7.2.0" }
+          ]
+        },
+        {
+          "id": "host12",
+          "ip": "192.168.3.5",
+          "os": "linux",
+          "software": [
+            { "name": "HAProxy", "version": "2.8.0" },
+            { "name": "PostgreSQL", "version": "15.2" },
+            { "name": "Python", "version": "3.11.2" }
+          ]
+        }
+      ]
+    }
+  ]
+}

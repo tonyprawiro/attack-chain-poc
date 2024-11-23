@@ -1,0 +1,14 @@
+{
+  "connectivity": [
+    { "sourceHost": "host1", "targetHost": "host4", "protocol": "tcp", "port": 22 },
+    { "sourceHost": "host2", "targetHost": "host5", "protocol": "tcp", "port": 22 },
+    { "sourceHost": "host3", "targetHost": "host6", "protocol": "tcp", "port": 22 },
+    { "sourceHost": "host4", "targetHost": "host12", "port": "443" },
+    { "sourceHost": "host5", "targetHost": "host9", "protocol": "tcp", "port": 22 },
+    { "sourceHost": "host6", "targetHost": "host10", "protocol": "tcp", "port": 22 },
+    { "sourceHost": "host7", "targetHost": "host11", "protocol": "tcp", "port": 22 },
+    { "sourceHost": "host8", "targetHost": "host1", "protocol": "tcp", "port": 22 },
+    { "sourceHost": "host9", "targetHost": "host2", "protocol": "tcp", "port": 3389 },
+    { "sourceHost": "host10", "targetHost": "host3", "protocol": "tcp", "port": 22 }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "vulnerabilities": [
+    {
+      "id": "CWE-20",
+      "name": "Improper Input Validation",
+      "description": "The application does not properly validate user inputs, leading to potential vulnerabilities such as SQL Injection and XSS.",
+      "impact": "Unauthorized access, data breaches, or application compromise.",
+      "prevention": "Validate and sanitize user inputs, enforce strict input length and type constraints."
+    },
+    {
+      "id": "CWE-79",
+      "name": "Cross-Site Scripting (XSS)",
+      "description": "Malicious scripts are injected into trusted websites, executed in the victim’s browser.",
+      "impact": "Data theft, session hijacking, malware installation.",
+      "prevention": "Escape and sanitize user inputs, implement a Content Security Policy (CSP)."
+    },
+    {
+      "id": "CWE-89",
+      "name": "SQL Injection",
+      "description": "Unsanitized inputs are used in database queries, allowing attackers to execute arbitrary SQL commands.",
+      "impact": "Unauthorized data access, database modification or destruction.",
+      "prevention": "Use parameterized queries or prepared statements, validate inputs."
+    },
+    {
+      "id": "CWE-78",
+      "name": "OS Command Injection",
+      "description": "Allows attackers to execute unauthorized operating system commands.",
+      "impact": "System compromise, data theft, or disruption of services.",
+      "prevention": "Validate inputs and avoid directly passing user inputs to system commands."
+    },
+    {
+      "id": "CWE-502",
+      "name": "Deserialization of Untrusted Data",
+      "description": "Accepting and processing untrusted serialized data, which could lead to code execution.",
+      "impact": "Code execution, data tampering, privilege escalation.",
+      "prevention": "Use secure serialization libraries, validate serialized input."
+    },
+    {
+      "id": "CWE-119",
+      "name": "Buffer Overflow",
+      "description": "Data is written outside the allocated memory buffer, overwriting adjacent memory.",
+      "impact": "System crashes, data corruption, or remote code execution.",
+      "prevention": "Use secure coding practices, apply bounds checking, and avoid unsafe functions."
+    },
+    {
+      "id": "CWE-285",
+      "name": "Improper Authorization",
+      "description": "Critical functions can be accessed without proper permissions or authentication.",
+      "impact": "Unauthorized actions, sensitive data exposure, privilege escalation.",
+      "prevention": "Enforce proper authentication and authorization mechanisms for critical functions."
+    },
+    {
+      "id": "CWE-311",
+      "name": "Insecure Cryptographic Storage",
+      "description": "Sensitive information is stored insecurely without encryption or weak encryption.",
+      "impact": "Exposure of sensitive data like passwords, credit card numbers.",
+      "prevention": "Use strong encryption algorithms, securely manage encryption keys."
+    },
+    {
+      "id": "CWE-918",
+      "name": "Server-Side Request Forgery (SSRF)",
+      "description": "Attackers force a server to make unintended HTTP requests, often targeting internal services.",
+      "impact": "Access to sensitive internal data, system compromise.",
+      "prevention": "Validate and sanitize user-controlled URLs, restrict network access with firewalls."
+    },
+    {
+      "id": "CVE-2024-38063",
+      "name": "Windows TCP/IP IPv6 RCE Vulnerability",
+      "description": "A vulnerability in the Windows TCP/IP stack allows remote attackers to execute arbitrary code by sending specially crafted IPv6 packets.",
+      "impact": "Full system compromise on Windows systems with IPv6 enabled.",
+      "prevention": "Disable IPv6 if not required, apply the latest Windows security patches, monitor unusual traffic.",
+      "vulnerable_versions": "All Windows versions with IPv6 enabled prior to November 2024 patches.",
+      "fixed_versions": "Windows versions updated with November 2024 patches."
+    },
+    {
+      "id": "CVE-2024-47176",
+      "name": "CUPS Remote Code Execution",
+      "description": "A vulnerability in the Common UNIX Printing System (CUPS) enables attackers to execute malicious code by replacing IPP URLs during print jobs.",
+      "impact": "Complete system compromise, data theft, or production system damage.",
+      "prevention": "Apply patches from CUPS developers or disable printing services if unnecessary.",
+      "vulnerable_versions": "CUPS versions prior to 2.4.5.",
+      "fixed_versions": "CUPS version 2.4.5 or later."
+    },
+    {
+      "id": "CVE-2024-6387",
+      "name": "OpenSSH Race Condition RCE",
+      "description": "A race condition in OpenSSH's sshd daemon allows remote attackers to execute arbitrary code and gain root access.",
+      "impact": "System compromise, malware installation, network propagation.",
+      "prevention": "Update OpenSSH to the latest version, restrict SSH access, monitor logs for anomalies.",
+      "vulnerable_versions": "OpenSSH versions 8.5p1 to 9.8p1.",
+      "fixed_versions": "OpenSSH version 9.8p1 or later."
+    }
+  ]
+}
